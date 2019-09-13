@@ -16,10 +16,10 @@ let fn_create = function () {
     if (poligonos[indice] == null) {
         poligonos[indice] = new Poligono();
     }
-    let c = new Circulo(event.layerX, event.layerY, 10, "#ff0000");;
+    let c = new Circulo(event.layerX, event.layerY, 10, "rgb(" + auxcolor + ",0,0)");
     poligonos[indice].setCirculo(c);
     poligonos[indice].drawlastcirculo();
-    poligonos[indice].unir("#ffff00");
+    poligonos[indice].unir("rgb(0"+auxcolor+","+auxcolor+",0");
     if (poligonos[indice].getcantvertices() > 2) {
         document.querySelector("#unir").style.display = "block";
 
@@ -43,9 +43,9 @@ document.querySelector("#unir").addEventListener("click", function () {
     active = true;
     canvas.removeEventListener("click", fn_create)
     if (poligonos[indice].getcantvertices() > 2) {
-        poligonos[indice].unir("#ffff00", true)
+        poligonos[indice].unir("rgb(0"+auxcolor+","+auxcolor+",0", true)
         let centro = poligonos[indice].getcentro();
-        let c = new Circulo(centro.posX, centro.posY, 7, "#00ff00")
+        let c = new Circulo(centro.posX, centro.posY, 7, "rgb(0,"+auxcolor+",0")
         c.draw();
         poligonos[indice].setCentro(c);
         indice++;
@@ -66,10 +66,10 @@ canvas.addEventListener("mousedown", function () {
         if ((moviendo == true) && (active == true)) {
             if (poliactual.circ == false) {
                 poliactual.P.mover(event.layerX, event.layerY);
-                drawPoligonos();
+                drawPoligonos("rgb(0"+auxcolor+","+auxcolor+",0");
             } else {
                 poliactual.P.moverVertice(event.layerX, event.layerY)
-                drawPoligonos();
+                drawPoligonos("rgb(0"+auxcolor+","+auxcolor+",0");
             }
 
         }
@@ -83,7 +83,7 @@ canvas.addEventListener("dblclick", function () {
         if (poliactual.encontrado) {
             if ((poliactual.circ == true) && (poliactual.P.getcantvertices() > 3)) {
                 poliactual.P.eliminarpunto(event.layerX, event.layerY);
-                drawPoligonos();
+                drawPoligonos("rgb(0"+auxcolor+","+auxcolor+",0");
             } else {
                 document.querySelector("#error").innerHTML = "El vertice que desea borrar pertenece a un poligono de menos de 4 lados"
                 setTimeout(function () {
@@ -171,6 +171,6 @@ function cambiarColor(e) {
         }
         poligonos[i].cambiarColor("rgb(" + auxcolor + ",0,0","rgb(0,"+auxcolor+",0");
     }
-    drawPoligonos("rgb(0"+auxcolor+","+auxcolor+",0")
+    drawPoligonos("rgb("+auxcolor+","+auxcolor+",0")
     
 }
