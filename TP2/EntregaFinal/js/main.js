@@ -9,8 +9,12 @@ let indice = 0;
 let active = false;
 let moviendo = true;
 let poliactual;
+let verificar = false;
+let auxcolor = 255;
+
 const canvas = document.querySelector("#canv");
 const ctx = canvas.getContext("2d");
+
 let fn_create = function () {
     imprimeXY(event);
     if (poligonos[indice] == null) {
@@ -25,7 +29,9 @@ let fn_create = function () {
 
     }
 }
+
 canvas.addEventListener("click", fn_create)
+
 document.querySelector("#reload").addEventListener("click", function () {
     poligonos = [];
     indice = 0;
@@ -39,6 +45,7 @@ document.querySelector("#crear").addEventListener("click", function () {
     canvas.addEventListener("click", fn_create)
     document.querySelector("#crear").style.display = "none";
 })
+
 document.querySelector("#unir").addEventListener("click", function () {
     active = true;
     canvas.removeEventListener("click", fn_create)
@@ -53,6 +60,7 @@ document.querySelector("#unir").addEventListener("click", function () {
     document.querySelector("#unir").style.display = "none";
     document.querySelector("#crear").style.display = "block";
 })
+
 canvas.addEventListener("mousedown", function () {
     if (active) {
         poliactual = get_poligono(event);
@@ -76,7 +84,6 @@ canvas.addEventListener("mousedown", function () {
     })
 });
 
-
 canvas.addEventListener("dblclick", function () {
     if (active) {
         poliactual = get_poligono(event);
@@ -92,9 +99,8 @@ canvas.addEventListener("dblclick", function () {
             }
         }
     }
-
 })
-let verificar = false;
+
 document.getElementById('canv').addEventListener("keydown",function(){    
     if (event.code == 'KeyC'){
         verificar = true;
@@ -106,6 +112,7 @@ document.getElementById('canv').addEventListener("keydown",function(){
         })
     }
 })
+
 document.getElementById('canv').addEventListener("keyup",function(){
     verificar = false;
 })
@@ -122,9 +129,7 @@ function get_poligono(event) {
                     encontrado: true,
                     P: poligonos[i],
                     circ: false
-
                 }
-
             }
             if (poligonos[i].get_circulo_actual(event.layerX, event.layerY).encontrado) {
                 return {
@@ -132,7 +137,6 @@ function get_poligono(event) {
                     P: poligonos[i],
                     circ: poligonos[i].get_circulo_actual(event.layerX, event.layerY).encontrado
                 };
-
             }
         }
     }
@@ -150,7 +154,6 @@ function drawPoligonos(color) {
         else{
             poligonos[i].drawPoligono();
         }
-        
     }
 }
 
@@ -158,7 +161,7 @@ function imprimeXY(e) {
     console.log(e.layerX);
     console.log(e.layerY);
 }
-let auxcolor = 255;
+
 function cambiarColor(e) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < poligonos.length; i++) {
@@ -171,6 +174,5 @@ function cambiarColor(e) {
         }
         poligonos[i].cambiarColor("rgb(" + auxcolor + ",0,0","rgb(0,"+auxcolor+",0");
     }
-    drawPoligonos("rgb("+auxcolor+","+auxcolor+",0")
-    
+    drawPoligonos("rgb("+auxcolor+","+auxcolor+",0");
 }

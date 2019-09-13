@@ -2,16 +2,18 @@ let canvas = document.getElementById('canv');
 let ctx = canvas.getContext("2d");
 export class Poligono {
     constructor() {
-        this.circulos = []
-        this.centro
+        this.circulos = [];
+        this.centro;
     }
     
     setCirculo(c) {
         this.circulos.push(c);
     }
+
     drawlastcirculo() {
         this.circulos[this.circulos.length - 1].draw();
     }
+
     setCentro(c) {
         this.centro = c;
     }
@@ -19,6 +21,7 @@ export class Poligono {
     getcantvertices() {
         return this.circulos.length;
     }
+
     unir(color, ultimoyprimero) {
         if (this.circulos.length > 1) {
             let canvas = document.getElementById('canv');
@@ -39,6 +42,7 @@ export class Poligono {
             ctx.stroke();
         }
     }
+
     unirtodos(color) {
         for (let i = 0; i < this.circulos.length - 1; i++) {
             let canvas = document.getElementById('canv');
@@ -51,6 +55,7 @@ export class Poligono {
         }
         this.unir(color, true)
     }
+
     getcentro() {
         let x = 0;
         let y = 0;
@@ -67,12 +72,14 @@ export class Poligono {
             posY: y
         }
     }
+
     mover(posX, posY) {
         for (let i = 0; i < this.circulos.length; i++) {
             this.circulos[i].mover_con_figura(posX - this.centro.x, posY - this.centro.y)
         }
         this.centro.cambiarpos(posX, posY)
     }
+
     get_circulo_actual(posX, posY) {
         for (let i = 0; i < this.circulos.length; i++) {
             if (this.circulos[i].meclickearon(posX, posY)) {
@@ -87,6 +94,7 @@ export class Poligono {
             indice: null
         }
     }
+
     moverVertice(posX, posY) {
         let indice = this.get_circulo_actual(posX, posY).indice;
         if (indice != null) {
@@ -94,6 +102,7 @@ export class Poligono {
             this.centro.mover(this.getcentro().posX, this.getcentro().posY);
         }
     }
+
     drawPoligono(color) {
         this.centro.draw()
         for (let i = 0; i < this.circulos.length; i++) {
@@ -107,6 +116,7 @@ export class Poligono {
         }
         
     }
+
     eliminarpunto(posX, posY) {
         let indice = this.get_circulo_actual(posX, posY).indice;
         if (indice != null) {
@@ -115,10 +125,11 @@ export class Poligono {
             this.centro.mover(this.getcentro().posX, this.getcentro().posY);
         }
     }
+
     cambiarColor(rgb,rgbcentro) {
         for (let i = 0; i < this.circulos.length; i++) {
             this.circulos[i].cambiarColor(rgb);
         }
-        this.centro.cambiarColor(rgbcentro)
+        this.centro.cambiarColor(rgbcentro);
     }
 }
