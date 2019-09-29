@@ -57,6 +57,8 @@ function gameover(win) {
         document.querySelector(".gameover").innerHTML = "YOU WIN";
         document.querySelector(".gameover").style.display = "inline"
         document.querySelector(".restart").style.display = "block"
+	coin.style.display = "none";
+    	fire.style.display = "none";
     } else {
         pj.classList.add("pjmuerte");
         pj.addEventListener("animationend", function () {
@@ -64,6 +66,8 @@ function gameover(win) {
             document.querySelector(".gameover").style.display = "inline"
             removeanmate()
             document.querySelector(".restart").style.display = "block"
+	coin.style.display = "none";
+    	fire.style.display = "none";
         })
     }
 
