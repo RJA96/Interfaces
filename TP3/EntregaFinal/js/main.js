@@ -27,7 +27,7 @@ function loop() {
         if (isCollide(pj.getBoundingClientRect(), coin.getBoundingClientRect())) {
             agarrarmoneda();
         }
-        puntaje.innerHTML = "puntos: " + puntos + " /1000";
+        puntaje.innerHTML = "Puntaje: " + puntos + " /1000";
     } else {
         derrota = true;
         gameover();
