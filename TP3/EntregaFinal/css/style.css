@@ -1,102 +1,91 @@
-iframe{
-    margin: auto;
-    width: 100%;
-    height:700px;
-}
-.hov{
-    border: none;
-	background: #3a7999;
-	color: #f2f2f2;
-	padding: 10px;
-	font-size: 18px;
-	border-radius: 5px;
-	position: relative;
-	box-sizing: border-box;
-}
-p{
-    top:auto;
-    text-align: center;
-    font-size: 50px;
-}
-.hov:hover{
-    background-color: red;
-}
-#hovrandom{
-    border: none;
-	background: #3a7999;
-	color: #f2f2f2;
-	padding: 10px;
-	font-size: 18px;
-	border-radius: 5px;
-	position: relative;
-	box-sizing: border-box;
+.game {
+  width: 600px;
+  height: 360px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
-
-.hov2:hover {
-	
-    background: rgba(red, 0);
-    font-weight: 900;
-    letter-spacing: 1px;
-}
-.hov1:hover {
-	animation: bounce 1s;
-}
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		transform: translateY(0);
-	}
-
-	40% {
-		transform: translateY(-20px);
-	}
-
-	80% {
-		transform: translateY(-10px);
-	}
-}
-.hov3:hover {
-    transform: skew(-10deg);
-    }
-.hov4:hover{
-
-        color: #f2f2f2;
-        box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
-
-}
-.wrapper { 
-    overflow: hidden; 
-    display: block; 
-    width: 100%; 
-    user-select: none; 
-} 
-.pj {
-    position: absolute;
-    background: url(../img/run.png);
-    top: -160px;
-    left: -180px;
-    width: 579px;
-    height: 763px;
-    z-index: 3;
-    transform: scale(0.4, 0.4);
-    animation: playXrun 0.5s steps(4) infinite, playYrun 1s steps(2) infinite;
-}
-@keyframes playXrun {
-    from {
-        background-position-x: 0px;
-    }
-
-    to {
-        background-position-x: -2316px;
-    }
+.coin {
+  position: absolute;
+  background: url(../img/coin.png);
+  top: 130px;
+  width: 44px;
+  left: 10px;
+  background-position-y: 1px;
+  height: 41.5px;
+  z-index: 3;
+  transform: scale(0.9, 0.9);
+  display: none;
 }
 
-@keyframes playYrun {
-    from {
-        background-position-y: 0px;
-    }
+.coinanimation {
+  animation: coin 0.5s steps(10) infinite, move 3s linear infinite;
+}
 
-    to {
-        background-position-y: -1526px;
-    }
+.fire {
+  position: absolute;
+  background: url(../img/fire.png);
+  top: 200px;
+  width: 44px;
+  height: 64px;
+  z-index: 3;
+  transform: scale(0.8, 0.8);
+  display: none;
+
+}
+
+.fireanimation {
+  animation: fire 0.5s steps(5) infinite, move 2s linear infinite;
+}
+
+.puntajes {
+  position: absolute;
+  top: 300px;
+  font-weight: bolder;
+}
+
+.gameover {
+  position: absolute;
+  top: 100px;
+  margin-left: 170px;
+  color: yellow;
+  font-size: 60px;
+  font-weight: bolder;
+  z-index: 3;
+  display: none;
+}
+
+.restart {
+  display: none;
+}
+
+@keyframes coin {
+  from {
+    background-position-x: 0px;
+  }
+
+  to {
+    background-position-x: -440px;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(592px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fire {
+  from {
+    background-position-x: 0px;
+  }
+
+  to {
+    background-position-x: 320px;
+  }
 }
