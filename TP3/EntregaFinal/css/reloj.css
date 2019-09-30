@@ -1,0 +1,929 @@
+#clock {
+    background: #fff url(../img/reloj/gis.jpg);
+    background-size: 100%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    border-radius: 250px;
+}
+
+/* seconds */
+@keyframes secs_effect {
+    0% {
+        opacity: 1;
+    }
+
+    1.66% {
+        opacity: 1;
+    }
+
+    1.67% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#clock .secs {
+    height: 400px;
+    left: 155px;
+    position: absolute;
+    top: 249px;
+    width: 400px;
+}
+
+#clock .secs div {
+    background-color: #860000;
+    height: 2px;
+    opacity: 0;
+    position: absolute;
+    width: 190px;
+
+    animation-name: secs_effect;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+
+}
+
+#clock #s1 {
+    transform: rotate(-90deg) translatex(130px);
+    animation-delay: 0s;
+}
+
+#clock #s2 {
+    transform: rotate(-84deg) translatex(130px);
+    animation-delay: 1s;
+
+}
+
+#clock #s3 {
+    transform: rotate(-78deg) translatex(130px);
+    animation-delay: 2s;
+
+}
+
+#clock #s4 {
+    transform: rotate(-72deg) translatex(130px);
+    animation-delay: 3s;
+
+}
+
+#clock #s5 {
+    transform: rotate(-66deg) translatex(130px);
+    animation-delay: 4s;
+
+}
+
+#clock #s6 {
+    transform: rotate(-60deg) translatex(130px);
+    animation-delay: 5s;
+
+}
+
+#clock #s7 {
+    transform: rotate(-54deg) translatex(130px);
+    animation-delay: 6s;
+
+}
+
+#clock #s8 {
+    transform: rotate(-48deg) translatex(130px);
+    animation-delay: 7s;
+
+}
+
+#clock #s9 {
+    transform: rotate(-42deg) translatex(130px);
+    animation-delay: 8s;
+
+}
+
+#clock #s10 {
+    transform: rotate(-36deg) translatex(130px);
+    animation-delay: 9s;
+
+}
+
+#clock #s11 {
+    transform: rotate(-30deg) translatex(130px);
+    animation-delay: 10s;
+
+}
+
+#clock #s12 {
+    transform: rotate(-24deg) translatex(130px);
+    animation-delay: 11s;
+
+}
+
+#clock #s13 {
+    transform: rotate(-18deg) translatex(130px);
+    animation-delay: 12s;
+
+}
+
+#clock #s14 {
+    transform: rotate(-12deg) translatex(130px);
+    animation-delay: 13s;
+
+}
+
+#clock #s15 {
+    transform: rotate(-6deg) translatex(130px);
+    animation-delay: 14s;
+
+}
+
+#clock #s16 {
+    transform: rotate(0deg) translatex(130px);
+    animation-delay: 15s;
+
+}
+
+#clock #s17 {
+    transform: rotate(6deg) translatex(130px);
+    animation-delay: 16s;
+
+}
+
+#clock #s18 {
+    transform: rotate(12deg) translatex(130px);
+    animation-delay: 17s;
+
+}
+
+#clock #s19 {
+    transform: rotate(18deg) translatex(130px);
+    animation-delay: 18s;
+
+}
+
+#clock #s20 {
+    transform: rotate(24deg) translatex(130px);
+    animation-delay: 19s;
+
+}
+
+#clock #s21 {
+    transform: rotate(30deg) translatex(130px);
+    animation-delay: 20s;
+
+}
+
+#clock #s22 {
+    transform: rotate(36deg) translatex(130px);
+    animation-delay: 21s;
+
+}
+
+#clock #s23 {
+    transform: rotate(42deg) translatex(130px);
+    animation-delay: 22s;
+
+}
+
+#clock #s24 {
+    transform: rotate(48deg) translatex(130px);
+    animation-delay: 23s;
+
+}
+
+#clock #s25 {
+    transform: rotate(54deg) translatex(130px);
+    animation-delay: 24s;
+
+}
+
+#clock #s26 {
+    transform: rotate(60deg) translatex(130px);
+    animation-delay: 25s;
+
+}
+
+#clock #s27 {
+    transform: rotate(66deg) translatex(130px);
+    animation-delay: 26s;
+
+}
+
+#clock #s28 {
+    transform: rotate(72deg) translatex(130px);
+    animation-delay: 27s;
+
+}
+
+#clock #s29 {
+    transform: rotate(78deg) translatex(130px);
+    animation-delay: 28s;
+
+}
+
+#clock #s30 {
+    transform: rotate(84deg) translatex(130px);
+    animation-delay: 29s;
+
+}
+
+#clock #s31 {
+    transform: rotate(90deg) translatex(130px);
+    animation-delay: 30s;
+
+}
+
+#clock #s32 {
+    transform: rotate(96deg) translatex(130px);
+    animation-delay: 31s;
+
+}
+
+#clock #s33 {
+    transform: rotate(102deg) translatex(130px);
+    animation-delay: 32s;
+
+}
+
+#clock #s34 {
+    transform: rotate(108deg) translatex(130px);
+    animation-delay: 33s;
+
+}
+
+#clock #s35 {
+    transform: rotate(114deg) translatex(130px);
+    animation-delay: 34s;
+
+}
+
+#clock #s36 {
+    transform: rotate(120deg) translatex(130px);
+    animation-delay: 35s;
+
+}
+
+#clock #s37 {
+    transform: rotate(126deg) translatex(130px);
+    animation-delay: 36s;
+
+}
+
+#clock #s38 {
+    transform: rotate(132deg) translatex(130px);
+    animation-delay: 37s;
+
+}
+
+#clock #s39 {
+    transform: rotate(138deg) translatex(130px);
+    animation-delay: 38s;
+
+}
+
+#clock #s40 {
+    transform: rotate(144deg) translatex(130px);
+    animation-delay: 39s;
+
+}
+
+#clock #s41 {
+    transform: rotate(150deg) translatex(130px);
+    animation-delay: 40s;
+
+}
+
+#clock #s42 {
+    transform: rotate(156deg) translatex(130px);
+    animation-delay: 41s;
+
+}
+
+#clock #s43 {
+    transform: rotate(162deg) translatex(130px);
+    animation-delay: 42s;
+
+}
+
+#clock #s44 {
+    transform: rotate(168deg) translatex(130px);
+    animation-delay: 43s;
+
+}
+
+#clock #s45 {
+    transform: rotate(174deg) translatex(130px);
+    animation-delay: 44s;
+
+}
+
+#clock #s46 {
+    transform: rotate(180deg) translatex(130px);
+    animation-delay: 45s;
+
+}
+
+#clock #s47 {
+    transform: rotate(186deg) translatex(130px);
+    animation-delay: 46s;
+
+}
+
+#clock #s48 {
+    transform: rotate(192deg) translatex(130px);
+    animation-delay: 47s;
+
+}
+
+#clock #s49 {
+    transform: rotate(198deg) translatex(130px);
+    animation-delay: 48s;
+
+}
+
+#clock #s50 {
+    transform: rotate(204deg) translatex(130px);
+    animation-delay: 49s;
+
+}
+
+#clock #s51 {
+    transform: rotate(210deg) translatex(130px);
+    animation-delay: 50s;
+
+}
+
+#clock #s52 {
+    transform: rotate(216deg) translatex(130px);
+    animation-delay: 51s;
+
+}
+
+#clock #s53 {
+    transform: rotate(222deg) translatex(130px);
+    animation-delay: 52s;
+
+}
+
+#clock #s54 {
+    transform: rotate(228deg) translatex(130px);
+    animation-delay: 53s;
+
+}
+
+#clock #s55 {
+    transform: rotate(234deg) translatex(130px);
+    animation-delay: 54s;
+
+}
+
+#clock #s56 {
+    transform: rotate(240deg) translatex(130px);
+    animation-delay: 55s;
+
+}
+
+#clock #s57 {
+    transform: rotate(246deg) translatex(130px);
+    animation-delay: 56s;
+
+}
+
+#clock #s58 {
+    transform: rotate(252deg) translatex(130px);
+    animation-delay: 57s;
+
+}
+
+#clock #s59 {
+    transform: rotate(258deg) translatex(130px);
+    animation-delay: 58s;
+
+}
+
+#clock #s60 {
+    transform: rotate(264deg) translatex(130px);
+    animation-delay: 59s;
+}
+
+/* minutes */
+@keyframes mins_effect {
+    0% {
+        opacity: 1;
+    }
+
+    1.66% {
+        opacity: 1;
+    }
+
+    1.67% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#clock .mins {
+    height: 300px;
+    left: 175px;
+    position: absolute;
+    top: 249px;
+    width: 300px;
+}
+
+#clock .mins div {
+    background-color: #000086;
+    height: 3px;
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    animation-name: mins_effect;
+    animation-duration: 3600s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+#clock #m1 {
+    transform: rotate(-90deg) translatex(110px);
+    animation-delay: 0s;
+}
+
+#clock #m2 {
+    transform: rotate(-84deg) translatex(110px);
+    animation-delay: 60s;
+
+}
+
+#clock #m3 {
+    transform: rotate(-78deg) translatex(110px);
+    animation-delay: 120s;
+
+}
+
+#clock #m4 {
+    transform: rotate(-72deg) translatex(110px);
+    animation-delay: 180s;
+
+}
+
+#clock #m5 {
+    transform: rotate(-66deg) translatex(110px);
+    animation-delay: 240s;
+
+}
+
+#clock #m6 {
+    transform: rotate(-60deg) translatex(110px);
+    animation-delay: 300s;
+
+}
+
+#clock #m7 {
+    transform: rotate(-54deg) translatex(110px);
+    animation-delay: 360s;
+
+}
+
+#clock #m8 {
+    transform: rotate(-48deg) translatex(110px);
+    animation-delay: 420s;
+}
+
+#clock #m9 {
+    transform: rotate(-42deg) translatex(110px);
+    animation-delay: 480s;
+
+}
+
+#clock #m10 {
+    transform: rotate(-36deg) translatex(110px);
+    animation-delay: 540s;
+
+}
+
+#clock #m11 {
+    transform: rotate(-30deg) translatex(110px);
+    animation-delay: 600s;
+
+}
+
+#clock #m12 {
+    transform: rotate(-24deg) translatex(110px);
+    animation-delay: 660s;
+
+}
+
+#clock #m13 {
+    transform: rotate(-18deg) translatex(110px);
+    animation-delay: 720s;
+
+}
+
+#clock #m14 {
+    transform: rotate(-12deg) translatex(110px);
+    animation-delay: 780s;
+
+}
+
+#clock #m15 {
+    transform: rotate(-6deg) translatex(110px);
+    animation-delay: 840s;
+
+}
+
+#clock #m16 {
+    transform: rotate(0deg) translatex(110px);
+    animation-delay: 900s;
+
+}
+
+#clock #m17 {
+    transform: rotate(6deg) translatex(110px);
+    animation-delay: 960s;
+
+}
+
+#clock #m18 {
+    transform: rotate(12deg) translatex(110px);
+    animation-delay: 1020s;
+
+}
+
+#clock #m19 {
+    transform: rotate(18deg) translatex(110px);
+    animation-delay: 1080s;
+
+}
+
+#clock #m20 {
+    transform: rotate(24deg) translatex(110px);
+    animation-delay: 1140s;
+
+}
+
+#clock #m21 {
+    transform: rotate(30deg) translatex(110px);
+    animation-delay: 1200s;
+
+}
+
+#clock #m22 {
+    transform: rotate(36deg) translatex(110px);
+    animation-delay: 1260s;
+
+}
+
+#clock #m23 {
+    transform: rotate(42deg) translatex(110px);
+    animation-delay: 1320s;
+
+}
+
+#clock #m24 {
+    transform: rotate(48deg) translatex(110px);
+    animation-delay: 1380s;
+
+}
+
+#clock #m25 {
+    transform: rotate(54deg) translatex(110px);
+    animation-delay: 1440s;
+
+}
+
+#clock #m26 {
+    transform: rotate(60deg) translatex(110px);
+    animation-delay: 1500s;
+
+}
+
+#clock #m27 {
+    transform: rotate(66deg) translatex(110px);
+    animation-delay: 1560s;
+
+}
+
+#clock #m28 {
+    transform: rotate(72deg) translatex(110px);
+    animation-delay: 1620s;
+
+}
+
+#clock #m29 {
+    transform: rotate(78deg) translatex(110px);
+    animation-delay: 1680s;
+
+}
+
+#clock #m30 {
+    transform: rotate(84deg) translatex(110px);
+    animation-delay: 1740s;
+
+}
+
+#clock #m31 {
+    transform: rotate(90deg) translatex(110px);
+    animation-delay: 1800s;
+
+}
+
+#clock #m32 {
+    transform: rotate(96deg) translatex(110px);
+    animation-delay: 1860s;
+
+}
+
+#clock #m33 {
+    transform: rotate(102deg) translatex(110px);
+    animation-delay: 1920s;
+
+}
+
+#clock #m34 {
+    transform: rotate(108deg) translatex(110px);
+    animation-delay: 1980s;
+
+}
+
+#clock #m35 {
+    transform: rotate(114deg) translatex(110px);
+    animation-delay: 2040s;
+
+}
+
+#clock #m36 {
+    transform: rotate(120deg) translatex(110px);
+    animation-delay: 2100s;
+
+}
+
+#clock #m37 {
+    transform: rotate(126deg) translatex(110px);
+    animation-delay: 2160s;
+
+}
+
+#clock #m38 {
+    transform: rotate(132deg) translatex(110px);
+    animation-delay: 2220s;
+
+}
+
+#clock #m39 {
+    transform: rotate(138deg) translatex(110px);
+    animation-delay: 2280s;
+
+}
+
+#clock #m40 {
+    transform: rotate(144deg) translatex(110px);
+    animation-delay: 2340s;
+
+}
+
+#clock #m41 {
+    transform: rotate(150deg) translatex(110px);
+    animation-delay: 2400s;
+
+}
+
+#clock #m42 {
+    transform: rotate(156deg) translatex(110px);
+    animation-delay: 2460s;
+
+}
+
+#clock #m43 {
+    transform: rotate(162deg) translatex(110px);
+    animation-delay: 2520s;
+
+}
+
+#clock #m44 {
+    transform: rotate(168deg) translatex(110px);
+    animation-delay: 2580s;
+
+}
+
+#clock #m45 {
+    transform: rotate(174deg) translatex(110px);
+    animation-delay: 2640s;
+
+}
+
+#clock #m46 {
+    transform: rotate(180deg) translatex(110px);
+    animation-delay: 2700s;
+
+}
+
+#clock #m47 {
+    transform: rotate(186deg) translatex(110px);
+    animation-delay: 2760s;
+
+}
+
+#clock #m48 {
+    transform: rotate(192deg) translatex(110px);
+    animation-delay: 2820s;
+
+}
+
+#clock #m49 {
+    transform: rotate(198deg) translatex(110px);
+    animation-delay: 2880s;
+
+}
+
+#clock #m50 {
+    transform: rotate(204deg) translatex(110px);
+    animation-delay: 2940s;
+
+}
+
+#clock #m51 {
+    transform: rotate(210deg) translatex(110px);
+    animation-delay: 3000s;
+
+}
+
+#clock #m52 {
+    transform: rotate(216deg) translatex(110px);
+    animation-delay: 3060s;
+
+}
+
+#clock #m53 {
+    transform: rotate(222deg) translatex(110px);
+    animation-delay: 3120s;
+
+}
+
+#clock #m54 {
+    transform: rotate(228deg) translatex(110px);
+    animation-delay: 3180s;
+
+}
+
+#clock #m55 {
+    transform: rotate(234deg) translatex(110px);
+    animation-delay: 3240s;
+
+}
+
+#clock #m56 {
+    transform: rotate(240deg) translatex(110px);
+    animation-delay: 3300s;
+
+}
+
+#clock #m57 {
+    transform: rotate(246deg) translatex(110px);
+    animation-delay: 3360s;
+
+}
+
+#clock #m58 {
+    transform: rotate(252deg) translatex(110px);
+    animation-delay: 3420s;
+
+}
+
+#clock #m59 {
+    transform: rotate(258deg) translatex(110px);
+    animation-delay: 3480s;
+
+}
+
+#clock #m60 {
+    transform: rotate(264deg) translatex(110px);
+    animation-delay: 3540s;
+
+}
+
+/* hours */
+@keyframes hours_effect {
+    0% {
+        opacity: 1;
+    }
+
+    8.33% {
+        opacity: 1;
+    }
+
+    8.34% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#clock .hours {
+    height: 300px;
+    left: 175px;
+    position: absolute;
+    top: 249px;
+    width: 300px;
+}
+
+#clock .hours div {
+    background-color: #860086;
+    height: 3px;
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    animation-name: hours_effect;
+    animation-duration: 43200s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+#clock #h1 {
+    transform: rotate(-180deg) translatex(110px);
+    animation-delay: 0s;
+
+}
+
+#clock #h2 {
+    transform: rotate(-150deg) translatex(110px);
+    animation-delay: 3600s;
+
+}
+
+#clock #h3 {
+    transform: rotate(-120deg) translatex(110px);
+    animation-delay: 7200s;
+
+}
+
+#clock #h4 {
+    transform: rotate(-90deg) translatex(110px);
+    animation-delay: 10800s;
+
+}
+
+#clock #h5 {
+    transform: rotate(-60deg) translatex(110px);
+    animation-delay: 14400s;
+
+}
+
+#clock #h6 {
+    transform: rotate(-30deg) translatex(110px);
+    animation-delay: 18000s;
+
+}
+
+#clock #h7 {
+    transform: rotate(0deg) translatex(110px);
+    animation-delay: 21600s;
+
+}
+
+#clock #h8 {
+    transform: rotate(30deg) translatex(110px);
+    animation-delay: 25200s;
+
+}
+
+#clock #h9 {
+    transform: rotate(60deg) translatex(110px);
+    animation-delay: 28800s;
+
+}
+
+#clock #h10 {
+    transform: rotate(90deg) translatex(110px);
+    animation-delay: 32400s;
+
+}
+
+#clock #h11 {
+    transform: rotate(120deg) translatex(110px);
+    animation-delay: 36000s;
+
+}
+
+#clock #h12 {
+    transform: rotate(150deg) translatex(110px);
+    animation-delay: 39600s;
+
+}
