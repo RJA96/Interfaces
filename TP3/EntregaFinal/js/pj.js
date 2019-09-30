@@ -35,8 +35,6 @@ var elem = document.querySelector('.wrapper'),
      if (mousedown) { 
          // Now we calculate the difference upwards 
          div.style.left = e.clientX + x + 'px'; 
-         div.style.top = e.clientY + y + 'px'; 
-         console.log("cx");
-         
+         div.style.top = e.clientY + y + 'px';          
      } 
  }, true); 
