@@ -1,0 +1,80 @@
+:root{
+    --primaryColour:#B23030;
+    --primaryColourText:white;
+    --heading-font: 'Open Sans', sans-serif;
+    --body-font: Lato, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font {
+  font-family: var(--heading-font);
+}
+
+body,
+.body-font {
+  font-family: var(--body-font)
+}
+
+/*     <!-- Fuente de google universal -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans:700">
+*/
+/* cambiar el color de fondo a la barra */
+nav.navbar {
+    background-color: var(--primaryColour) !important;
+}
+.dropdown-menu{
+    background-color: var(--primaryColour) !important;
+}
+.dropdown-item{
+    background-color: var(--primaryColour) !important;
+}
+.texto_blanco a{
+    color: white !important;
+}
+.icono{
+    width: 60px;
+    height: 60px;
+}
+.iconobusqueda{
+    width: 35px;
+    height: 35px;
+}
+p{
+    color: white;
+    font-size: 160%;
+}
+.puntaje{
+    color: white;
+    font-size: 500% !important;
+}
+h2{
+    color: white;
+}
+
+.poster{
+    width: 80%;
+    height: 80%;
+}
+.navbar-toggler, .navbar-toggler-icon{
+    text-align:left !important;
+}
+label{
+    color: var(--primaryColour);
+}
+@media only screen and (max-width: 767px) {
+    #slide-navbar-collapse {
+      position: fixed;
+      top: 0;
+      left: 15px;
+      z-index: 99;
+      width: 280px;
+      height: 100%;
+      background-color: #ddd;
+      overflow: auto;
+    }
+}
